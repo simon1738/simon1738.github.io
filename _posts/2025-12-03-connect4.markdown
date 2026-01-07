@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "2-Player Connect 4"
+date:   2025-12-03 12:48:23 -0500
+categories: projects
+---
+
+<p align="center" width="100%">
+  <img src="/assets/images/win-screenshot.png" alt="Headshot" width="60%">
+</p>
+
+This 2-player game was created as part of my final for a object-oriented design patterns class in Fall 2025. While it may not be very complex from a technical standpoint, its purpose is to demonstrate an applicable use of the MVC pattern. Here is how it is organized:
+
+### Model
+Model handles the data, which is stored in the Model class. The gameboard is represented by an array in which each cell either contains a player's piece or remains empty. Model also handles the action of placing a player's piece and updating the array, as well as checking the gameboard to see if either player has won.
+
+### View
+View communicates with the user, both receiving input and displaying output. In this game, there are two instances of the View class (one for each player). The View class uses Java Swing to visualize the gameboard GUI in each player's window.
+
+### Controller
+Controller bridges Model and View, handling the clicks received by the Views and alerting the Model. After a player provides input to a View, Controller forwards the input to Model. Model process the input, updating the gameboard array as necessary, then returns the state of the game to Controller so it can be displayed to the players in the Views. Controller also keeps track of which player's turn it is and stops the game when a player has won.
+
+<br>
+
+#### Check it out [here](https://github.com/simon1738/Connect4MVC) to see the code!

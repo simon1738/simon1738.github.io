@@ -18,21 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Simon's Site
+title: Simon Adams
 email: spadams831@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! I am a student at Indiana University Bloomington, directly admitted to the Luddy School of Informatics, Computing, and Engineering. 
-  I am pursuing a Bachelor’s degree in Computer Science with a specialization in Software Engineering, 
-  along with a certificate in Folklore and Ethnomusicology and a minor in Data Science.
+  Hi, feel free to look around to see some stuff I've worked on!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+# twitter_username: jekyllrb
 github_username:  simon1738
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+minima:
+  date_format: "%b %-d, %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
