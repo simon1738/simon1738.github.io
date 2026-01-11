@@ -18,7 +18,7 @@ Model handles the data, which is stored in the Model class. The gameboard is rep
 View communicates with the user, both receiving input and displaying output. In this game, there are two instances of the View class (one for each player). The View class uses Java Swing to visualize the gameboard GUI in each player's window.
 
 ### Controller
-Controller bridges Model and View, handling the clicks received by the Views and alerting the Model. After a player provides input to a View, Controller forwards the input to Model. Model process the input, updating the gameboard array as necessary, then returns the state of the game to Controller so it can be displayed to the players in the Views. Controller also keeps track of which player's turn it is and stops the game when a player has won.
+Controller bridges Model and View, handling the clicks received by the Views and alerting the Model. After a player provides input to a View, Controller forwards the input to Model. Model processes the input, updating the gameboard array as necessary, then returns the state of the game to Controller so it can be displayed to the players in the Views. Controller also keeps track of which player's turn it is and stops the game when a player has won.
 
 <br>
 
