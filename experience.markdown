@@ -7,7 +7,7 @@ permalink: /about/experience/
 ### **Undergraduate Instructor** - Indiana University Luddy School
 *Bloomington, IN*
 
-January 2025-Present
+January 2025-May 2026
 - Provided homework help for students in a Java software systems class
 - Led a weekly lab for students
 
