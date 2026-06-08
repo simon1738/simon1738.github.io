@@ -5,7 +5,7 @@
 layout: home
 ---
 
-**Projects**
+# Projects
 
 - [Last.fm Dashboard](/Last.fm-Dashboard/) — search any Last.fm user and browse their top artists, albums, and tracks.
 

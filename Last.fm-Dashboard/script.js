@@ -7,7 +7,7 @@ $(function () {
 
     // Renders the user's avatar
     function renderAvatar(user) {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=" + encodeURIComponent(user) + "&api_key=287bf7be3a6bde9f6174c639a306b459&format=json", function (data) {
+        $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=" + encodeURIComponent(user) + "&api_key=287bf7be3a6bde9f6174c639a306b459&format=json", function (data) {
             if (data.error) {
                 $('#avatar').addClass('hidden');
                 return;
@@ -63,7 +63,7 @@ $(function () {
     function search(user, filter) {
         $('#results').empty()
 
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user." + encodeURIComponent(filter) + "&period=7day&user=" + encodeURIComponent(user) + "&api_key=287bf7be3a6bde9f6174c639a306b459&format=json", function (data) {
+        $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user." + encodeURIComponent(filter) + "&period=7day&user=" + encodeURIComponent(user) + "&api_key=287bf7be3a6bde9f6174c639a306b459&format=json", function (data) {
             if (data.error) {
                 $('#results').append("<p class='error'>" + data.message + "</p>");
                 return;
