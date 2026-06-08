@@ -1,6 +1,24 @@
 @media (max-width: 500px) {
-    .album {
+    #results {
+        padding: 0 12px;
+    }
+
+    .album,
+    .artist,
+    .track {
         flex-direction: column;
+        width: auto;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .album img,
+    .artist img,
+    .track img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 }
 
@@ -28,14 +46,13 @@
 
 #results {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
     gap: 15px;
     padding: 0 20px;
 }
 
 #searched-user {
     font-size: 15px;
-    font-weight: bold;
     color: #333;
     padding: 8px 14px;
     border: none;
@@ -46,12 +63,12 @@
 }
 
 #search-button {
+    font-weight: bold;
     padding: 8px 18px;
     border: none;
     border-radius: 6px;
     background-color: #000000;
     color: white;
-    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -107,6 +124,8 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 95%;
+    box-sizing: border-box;
+    min-width: 0;
     text-align: left;
     border-radius: 10px;
     background-color: #eaeaea;
@@ -150,6 +169,11 @@
     font-size: 20px;
     color: #666;
     margin-top: 5px;
+    min-width: 0;
+}
+
+.metadata p {
+    overflow-wrap: anywhere;
 }
 
 body {
